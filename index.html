@@ -1,0 +1,71 @@
+<!DOCTYPE html>  
+<html>  
+<head>
+
+<link href="titlelogo.ico" rel="shortcut icon" type="image/x-icon">  
+<title>学习资源分享平台</title>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<link media="(min-width:768px)" rel="stylesheet" type="text/css" href="CSS/index_style_web.css">
+<link media="(max-width:767px)" rel="stylesheet" type="text/css" href="CSS/index_style_mobile.css">
+
+<script>
+if (window.innerWidth >= 768) {
+  setInterval(() => {
+  const now = new Date();
+  const timeString = `当前时间：${now.toLocaleString()}`;
+  document.getElementById("current-time").innerText = timeString;
+  }, 1000); //每秒更新一次
+  } 
+</script>
+
+<script>
+</script>
+
+</script>
+
+</head> 
+
+<body> 
+
+<!--HTML的header部分-->
+<div class="header">学习资源分享平台(禁止商业用途)</div>
+
+<div class="main-content">
+   <!--菜单栏和欢迎页-->
+  <div class="leftbar">
+    <ul class="menu">
+      <li><a href="index.html" class="navg">首页</a></li>
+	  <li><a href="course_study_material.html" class="navg">学习参考资料</a></li>
+	  <li><a href="python_study.html" class="navg">Python学习分享</a></li>
+      <li><a href="some_links.html" class="navg">友情链接</a></li>
+    </ul>
+  </div>
+  
+  <!--首页的介绍部分-->
+  <div class="main-body">
+	  <div class="text-content">
+		<div class="up-welcome">
+		   <span>欢迎访问我的网页!<span style="opacity:0">===</span></span>
+		   <span id="current-time"></span>
+		</div>
+	    <div class="intro">
+	      <div class="title"><p class="intro-title"><b>关于我和网页设计的故事(写于<span class="Eng">2023</span>年<span class="Eng">6</span>月)</b></p></div>
+		  <div class="intro-content">
+		     <p class="para">这是一段非常有趣的经历。大一刚入学的时候，我主动参与了班委的竞选，凭借着高中三年担任体育委员的经历，我不知天高地厚地去竞选了文体委员，结果到底还是被一个文武双全的姑娘比下去了，倒是替补上了突然没有人竞选的学习委员，于是这一做就是<span class="Eng">4</span>年(期间有过一次班委换届，不过没我什么事)。</p>
+             <p class="para">大一上半学年过半，突然觉悟了，想着当个学委也不能啥也不干呀，也许可以做点学习资料。当时有一道名叫“高等数学”的坎，于是半途开始整理这门课程的资料，最后发现这样做挺有意义的，就这样，开启了我的资料整理之路。随着后面课程的深入学习，自己的想法逐渐丰富，内容与审美也在提升，资料也越做越详细，以至于我不得不把原来的题目中的“复习资料”改成了“学习参考资料”(好吧，我可不想到时候有人跑来说：“我看了你的资料准备期末考试结果一个也没考到”——这锅我可不想背......)</p>
+		     <p class="para">我还是非常感谢资料的使用者给予的反馈。令我印象比较深刻的是海科一位名叫刘健斌的小学弟，对我整理的《流体力学<span class="Eng">I</span>》的资料提出了许多不正确的地方。那么问题自然就来了——毕业之后，资料更新后的怎么才能实现同步分享与传播？于是想到了互联网，我决定利用<span class="Eng">GitHub</span>自行搭建一个比较简单的网站，以实现学习资源的分享。当然，我本人的计算机与编程技术不太好，像网页开发这块，我就简单地学习了<span class="Eng">HMTL</span>和<span class="Eng">CSS</span>的基础知识，然后在<span class="Eng">ChatGPT</span>和文新一言的指点下实现某些展示效果(让各位见笑了)</p>	
+		     <p class="para">最后想说的是：“<b style="color:red"><u>考试需要一定的技巧，但学知识一定不要功利与浮躁！</u></b>”希望我的资料可以帮助到初学课程的各位朋友们，也希望各位在资料使用过程中发现问题与我积极交流，我的邮箱在网页底部。</p>
+		  </div> 
+		</div>
+	  </div>  
+  </div>
+</div>
+<footer class="footer-info">
+  Powered by <u>Github & Gitee</u> | Copyrights © 2023, <i style="font-family:'Times New Roman';font-size:18px"}>  
+  <a href="https://mp.weixin.qq.com/s?__biz=MzI3MjA0MzUxOA==&mid=2650373948&idx=1&sn=2e301aba9831f86afc0450edc2f05639&chksm=f33543adc442cabbfa626bf462cd4a5f4f0babd9584b787c397d8cafadd4b15ed14879ae1d9e&mpshare=1&scene=23&srcid=0303nor2H9g5ZK3VCSFiYlZA&sharer_sharetime=1686239094830&sharer_shareid=13fafe4ce801fe1ab143439db6850ec1#rd" target="_blank">Jiang Bin</a></i> 
+  | E-mail: <b>lesnow_bin@163.com</b>
+</footer>
+</body>  
+</html>
