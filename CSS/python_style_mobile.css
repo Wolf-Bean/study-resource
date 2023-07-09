@@ -72,7 +72,7 @@ li a:active{
   
 .Eng-CN_Zen {
   text-align:justify;
-  text-justify:distribute-all-lines; /*这行必加，兼容ie浏览器*/ 
+  text-justify:distribute-all-lines; //这行必加，兼容ie浏览器
   text-align-last: justify;
   border-style: solid;
   border-color: transparent;
