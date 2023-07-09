@@ -1,0 +1,97 @@
+html { 
+  background: url("../bgimges/bg-img3.jpg") no-repeat center fixed; 
+  background-size: cover;}
+ 
+html,body {height:100%}
+
+.header{
+  text-align:center;
+  font-family:"华文行楷";
+  font-size:20px;}
+ 
+ul {
+  list-style-type: none;
+  text-align:center;
+  margin: 0;
+  padding: 0;
+  width: 100%;}
+  
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;}
+  
+li a.navg {
+  background-color: #4CAF50;
+  color: white;}
+
+li a:active{
+  background-color: #CCFA00;
+  color: black;}
+  
+span.Eng {font-family:Times New Roman;}
+
+div.tabledata {
+  margin: 0 auto;
+  padding:0;
+  text-align:center;}
+
+caption {
+  font-size:22px;
+  font-family:楷体;
+  font-weight:bold;}
+  
+table { 
+  margin: 0 auto;
+  width:100%;}
+  
+table th {width:70%;}
+table td {width:30%;}
+ 
+td a:link {color:#354DFC}
+td a:visited {color:purple} 
+td a:hover {color:#0707A5}
+td a:active {color:red}
+
+.physical-I th {color:brown;}
+.physical-II th {color:orange;}
+.physical-III th {color:green;}
+.Specialized-cources th {color:#F43342}
+
+p#text {
+  color:red;
+  font-family:华文仿宋;
+  font-size:22px;
+  text-align:center;} 
+
+.Math-I1 th {color:brown;}
+.Math-I2 th {color:green;} 
+
+.probability th {color:brown;}
+.linear-algebra th {color:orange;}
+.Math-Physical th {color:green;}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  z-index: 9999;
+  cursor: pointer;
+  display: none;}
+
+#back-to-top img {
+  width: 40px;
+  height: 40px;}
+
+/*Footer的样式*/
+.footer-info {
+  text-align:center;
+  position:relative;
+  bottom:0;
+  margin:20px auto 2px auto;}
+ 
+.footer-info a:link {color:blue}
+.footer-info a:visited {color:purple} 
+.footer-info a:hover {color:#05D8EF}
+.footer-info a:active {color:black}

@@ -1,0 +1,75 @@
+html { 
+  background: url("../bgimges/bg-img1.jpg") no-repeat center fixed; /*设置背景的样式，不重复；居中；固定*/
+  background-size: cover;}
+
+html,body {height:100%} /*填充整个界面*/
+
+.header {text-align:center;
+  font-family:华文行楷;
+  font-size:20px;}
+  
+ul {
+  list-style-type: none;
+  text-align:center;
+  margin: 0;
+  padding: 0;
+  width: 100%;}
+  
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;}
+  
+li a.navg {
+  background-color: #4CAF50;
+  color: white;}
+
+li a:active{
+  background-color: #CCFA00;
+  color: black;}
+
+.up-welcome {opacity:0;}  
+
+.intro {font-family:仿宋;
+  font-size:17px;}
+
+div.title {
+  text-align:center;
+  background-color: #F4F646;}
+ 
+.intro-title {
+  border-style: dotted;
+  border-color: red;
+  border-radius: 10px;
+  margin:5px 0 1px 0;
+  padding: 4px;}
+  
+.intro-content {
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 10px;
+  margin:5px 0 1px 0;
+  padding: 4px;
+  background-color: rgba(157,242,246,0.3);}
+  
+p.para {
+  line-height: 1.5; /*设置行间距*/
+  text-align:justify;
+  margin:10px 0;
+  text-indent:2em;}
+
+.footer-info {
+  text-align:center;
+  position:relative;
+  bottom:0;
+  margin:0 auto;}
+
+span.Eng {font-family:Times New Roman;}
+ 
+.footer-info a:link {color:blue}
+.footer-info a:visited {color:purple} 
+.footer-info a:hover {color:#05D8EF}
+.footer-info a:active {color:black}
+
+
