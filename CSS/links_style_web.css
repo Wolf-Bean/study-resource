@@ -1,6 +1,6 @@
 /*为网页设置背景图*/
 html { 
-  background: url("../bgimges/bg-img6.jpg") no-repeat center fixed; 
+  background: url("../bgimages/bg-img6.jpg") no-repeat center fixed; 
   background-size: cover;}
 
 /*保证内容填充满整个HTML页面*/

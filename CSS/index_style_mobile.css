@@ -1,5 +1,5 @@
 html { 
-  background: url("../bgimges/bg-img1.jpg") no-repeat center fixed; /*设置背景的样式，不重复；居中；固定*/
+  background: url("../bgimages/bg-img1.jpg") no-repeat center fixed; /*设置背景的样式，不重复；居中；固定*/
   background-size: cover;}
 
 html,body {height:100%} /*填充整个界面*/
