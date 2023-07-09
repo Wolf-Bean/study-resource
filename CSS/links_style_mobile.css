@@ -33,10 +33,11 @@ html,body {height:100%}
   background-color: #CCFA00;
   color: black;}
 
-.main-body {word-wrap:break-word;}
+.main-body {
+  word-wrap:break-word;}
 
 .main-body p {
-  font-size:19px;
+  font-size:18px;
   font-family:仿宋;
   font-weight:bold;
   text-indent:2em;
