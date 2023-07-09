@@ -58,7 +58,7 @@ li a:active{
 
 .python-Zen p {
   line-height: 1.5; 
-  font-size:18px;
+  font-size:17px;
   font-family:仿宋;
   text-align:justify;
   margin:1px 2px;
@@ -67,11 +67,12 @@ li a:active{
 .Eng-CN_Zen div {  
   text-align:center;
   font-size:18px;
-  margin:4px auto;}
+  margin:4px auto;
+  font-family:"Times New Roman"}
   
 .Eng-CN_Zen {
   text-align:justify;
-  text-justify:distribute-all-lines; // 这行必加，兼容ie浏览器
+  text-justify:distribute-all-lines; /*这行必加，兼容ie浏览器*/ 
   text-align-last: justify;
   border-style: solid;
   border-color: transparent;
