@@ -1,0 +1,217 @@
+<!DOCTYPE html>  
+<html>  
+<head>
+
+<link href="titlelogo.ico" rel="shortcut icon" type="image/x-icon">   
+<title>Python学习分享</title>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+<link media="(min-width:768px)" rel="stylesheet" type="text/css" href="CSS/python_style_web.css">
+<link media="(max-width:767px)" rel="stylesheet" type="text/css" href="CSS/python_style_mobile.css">
+
+<script>
+	window.onscroll = function() { scrollFunction() };
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    document.getElementById("back-to-top").style.display = "block";
+            } else {
+                document.getElementById("back-to-top").style.display = "none";
+            }
+        }
+		
+	document.getElementById("back-to-top").onclick = function() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;}
+ </script>
+ 
+</head> 
+<body> 
+<div class="header">学习资源分享平台(禁止商业用途)</div>
+<div> 
+    <a id="back-to-top" href="#"><img src="Back-to-top.jpg" title="回到顶部"></a>
+</div> 
+
+<div class="main-content">
+
+<!--菜单栏-->
+  <div class="leftbar">
+    <ul class="menu">
+      <li><a href="index.html" class="navg">首页</a></li>
+	  <li><a href="course_study_material.html" class="navg">学习参考资料</a></li>
+	  <li><a href="python_study.html" class="navg">Python学习分享</a></li>
+      <li><a href="some_links.html" class="navg">友情链接</a></li>
+    </ul>
+	</br>
+  </div> 
+
+<div class="main-body">
+<div class="short-intro">
+  <div id="intro-text"><p>作为一个非<span class="Eng">IT</span>从业人员，我无法对<span class="Eng">Python</span>做出什么实质性的评价。我最直接的感受就是把它当做一门工具来看待。它的生态十分庞大(以至于不同的第三方库之间的依赖关系十分复杂)，我们大可不必面面俱到掌握，需要实现什么，就去学习相关的内容即可。正是秉持着这样的想法，我在与<span class="Eng">Python</span>打交道的过程中进行了一些系统的总结——因为我也是从一个小白开始接触<span class="Eng">Python</span>的，也希望能够为其他的小白们提供一套体系去上手。当然，关于<span class="Eng">Python</span>的分享我主要是在我的个人公众号上进行，这个网页只是对公众号内容的搬运，也作为一种分享的渠道。</p></div>
+  <div id="Code-img"><img src="wechart_code.jpg"/></div>
+  <div style="text-align:center;margin:auto 0;font-weight:bold;font-size:20px;color:yellow">扫码关注</br>我的公众号</br></div>
+</div>
+
+
+<div class="python-Zen">
+  <p>在<span class="Eng">Python</span>领域有一首十分有趣的诗——<span class="Eng">Python</span>之禅<span class="Eng">(The Zen of Python)</span>，它反映了<span class="Eng">Python</span>的设计哲学——<span class="Eng">Python</span>是一种追求优雅，明确，简单的编程语言。其内容如下(也可以通过在<span class="Eng">cmd</span>窗口运行<span class="Eng">Python</span>后通过<span class="Eng"><b style="color:red">import this</b></span>查看内容)：</p>
+  <div class="Eng-CN_Zen">
+    <div><a href="https://www.python.org/doc/humor/#the-zen-of-python" target="_blank"><b>The Zen of Python,by Tim Peters（<span class="Eng">Python</span>之禅）</b></a></div></br>
+	<b>Beautiful is better than ugly.</b>（优美胜于丑陋——Python 以编写优美的代码为目标）</br></br>
+	<b>Explicit is better than implicit.</b>（明了胜于晦涩——优美的代码应当是明了的,命名规范,风格相似）</br></br>
+	<b>Simple is better than complex.</b>（简洁胜于复杂——优美的代码应当是简洁的,不要有复杂的内部实现）</br></br>
+	<b>Complex is better than complicated.</b>（复杂胜于凌乱——如果复杂不可避免，那代码间也不能有难懂的关系,要保持接口简洁）</br></br>
+	<b>Flat is better than nested.</b>（扁平胜于嵌套——优美的代码应当是扁平的,不能有太多的嵌套）</br></br>
+	<b>Sparse is better than dense.</b>（间隔胜于紧凑——优美的代码有适当的间隔,不要奢望一行代码解决问题）</br></br>
+	<b>Readability counts.</b>（可读性很重要——优美的代码是可读的）</br></br>
+	<b>Special cases aren't special enough to break the rules.</b>（即便假借特例的实用性之名,，也不可违背这些规则——这些规则至高无上）</br></br>
+	<b>Although practicality beats purity.</b></br>
+	<b>Errors should never pass silently.</b>（不要包容所有错误,除非你确定需要这样做——精准地捕获异常,不写 except:pass 风格的代码）</br></br>
+	<b>Unless explicitly silenced.</b></br>
+	<b>In the face of ambiguity, refuse the temptation to guess.</b>（当存在多种可能，不要尝试去猜测）</br></br>
+	<b>There should be one --and preferably only one --obvious way to do it.</b>（而是尽量找一种,最好是唯一一种明显的解决方案——如果不确定,就用穷举法）</br></br>
+	<b>Although that way may not be obvious at first unless you're Dutch.</b>（虽然这并不容易,因为你不是 Python 之父——这里的 Dutch 是指 Guido ）</br></br>
+	<b>Now is better than never.</b></br>
+	<b>Although never is often better than right now.</b>（做也许好过不做,但不假思索就动手还不如不做——动手之前要细思量）</br></br>
+	<b>If the implementation is hard to explain, it's a bad idea.</b></br>
+	<b>If the implementation is easy to explain, it may be a good idea.</b>（如果你无法向人描述你的方案,那肯定不是一个好方案;反之亦然——方案测评标准）</br></br>
+	<b>Namespaces are one honking great idea – let's do more of those!</b>（命名空间是一种绝妙的理念,我们应当多加利用——倡导与号召） 
+  </div>
+</div>
+
+
+<div class="Python_entry">
+  <p class="Python_uptitle">● <span class="Eng">Python</span>程序设计入门</p>
+  <div>  
+  <table cellpadding="5"  cellspacing="4">
+	<tr>
+	  <th><img src="Pythonphotos/entry.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247483728&amp;idx=1&amp;sn=2c9ebeb410e7a634e27b2b96b862e39b&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Python入门(一) 基础语法元素及特点</a></td>
+	</tr>
+	<tr>
+	  <th><img src="Pythonphotos/entry.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247483771&amp;idx=1&amp;sn=27f9efc08e10b886db3cb3556dae3842&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Python入门(三) 元组、列表、集合和字典类型</a></td>
+	</tr>	
+	<tr>
+	  <th><img src="Pythonphotos/entry.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247483810&amp;idx=1&amp;sn=121b36df03e2c3b59a4a17943792df44&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Python入门(五) 函数和递归</a></td>
+	</tr>	
+	<tr>
+	  <th><img src="Pythonphotos/entry.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247484057&amp;idx=1&amp;sn=5c85942c1fbfdf95192d1b0caf62d7af&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Python入门(七) Python标准库简介</a></td>
+	</tr>
+  </table>
+  
+  <table cellpadding="5"  cellspacing="4">
+	<tr>
+	  <th><img src="Pythonphotos/entry.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247483753&amp;idx=1&amp;sn=5eaeff13008588914404d83254996afc&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Python入门(二) 基本数据类型：整数与字符串</a></td>
+	</tr>	
+	<tr>
+	  <th><img src="Pythonphotos/entry.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247483783&amp;idx=1&amp;sn=eca4d58b09acaa9e2eb34ceeb32c7955&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Python入门(四) 程序的控制结构</a></td>
+	</tr>	
+	<tr>
+	  <th><img src="Pythonphotos/entry.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247483843&amp;idx=1&amp;sn=e2802e820b43268e1f987e23f9a99f4b&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Python入门(六) 文件的初步处理</a></td>
+	</tr>	
+	<tr>
+	  <th><img src="Pythonphotos/entry.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247484093&amp;idx=1&amp;sn=bebddd16892b58b54812e54d1cb05a5d&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Python入门(八) Python第三方库概览</a></td>
+	</tr>		
+  </table>
+  </div>
+</div>
+
+<div class="Python_advanced">
+  <p class="Python_uptitle">● 海气数据可视化</p>
+  <p style="font-weight:bold;">#Part 1——可视化常用库介绍</p>
+  <div>
+  <table cellpadding="5"  cellspacing="4">
+	<tr>
+	  <th><img src="Pythonphotos/Numpy.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247484363&amp;idx=1&amp;sn=70567034d17f02a5bc7c3a68f87892c9&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">NumPy库(一)——ndarray数组介绍</a></td>
+	</tr>
+	<tr>
+	  <th><img src="Pythonphotos/Pandas.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247484623&amp;idx=1&amp;sn=71ec285a91c177ae76dfcffca98d5370&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Pandas库(一)——Series与DataFrame类型简介</a></td>
+	</tr>
+	<tr>
+	  <th><img src="Pythonphotos/Matplotlib_1.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247484982&amp;idx=1&amp;sn=9e1a90cf217c5bbf015a7f8a9a5c5fbd&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Matplotlib之pyplot(一)——基本绘图类型简介</a></td>
+	</tr>
+	<tr>
+	  <th><img src="Pythonphotos/Matplotlib_3.png"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247485195&amp;idx=1&amp;sn=87c3595014586df72b94ee0cc3c66b0d&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Matplotlib(三)——绘图风格和颜色的选取</a></td>
+	</tr>
+	<tr style="display:none">
+	  <th><img src="Pythonphotos/Matplotlib_5.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247485641&amp;idx=1&amp;sn=61e7f01969061e8c01e5d1411326ab5d&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Matplotlib(五)——Axes、坐标轴及文本的有关操作</a></td>
+	</tr>	
+  </table>
+ 
+  <table cellpadding="5"  cellspacing="4">
+	<tr>
+	  <th><img src="Pythonphotos/Numpy.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247484449&amp;idx=1&amp;sn=511d2e0cf7ac49d4b7f2e52c5f7b8b4e&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Numpy库(二)——数学运算与文件处理</a></td>
+	</tr>
+	<tr>
+	  <th><img src="Pythonphotos/Pandas.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247484818&amp;idx=1&amp;sn=6ad0d715f7d345be4fba0ff70fee20f3&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Pandas库(二)——文件操作与数据清洗</a></td>
+	</tr>
+	<tr>
+	  <th><img src="Pythonphotos/Matplotlib_2.jpg"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247485073&amp;idx=1&amp;sn=19c3bd48427bcf5729a88c0daad7455d&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Matplotlib之pyplot(二)——常用统计绘图</a></td>
+	</tr>
+	<tr>
+	  <th><img src="Pythonphotos/Matplotlib_4.png"/></th>
+	  <td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247485337&amp;idx=1&amp;sn=9c16bc356aa97d085b0f514c381bfba3&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Matplotlib(四)——数量场与向量场绘图</a></td>
+	</tr>
+  </table> 
+  </div>
+  
+  <p style="font-weight:bold;">#Part 2——海气数据可视化初步</p>
+  <div>
+    <table cellpadding="5"  cellspacing="4">
+	  <tr>
+	    <th><img src="Pythonphotos/cartopy.png"/></th>
+		<td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247485928&amp;idx=1&amp;sn=b4127eac8e779d3dd6653cf3daaed2a1&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">地理可视化库——Cartopy</a></td>
+	  </tr>
+	  <tr>
+	    <th><img src="Pythonphotos/colormap.png"/></th>
+		<td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247486111&amp;idx=1&amp;sn=bdf91d85572f5ada1618ce63c13ddefd&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">Colorbar的设置与使用</a></td>
+	  </tr>
+	  <tr>
+	    <th><img src="Pythonphotos/Polar_example.png"/></th>
+		<td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247486160&amp;idx=1&amp;sn=9e1c8d4d071d66a8681b456590a1019a&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">极坐标图与极射赤面投影图的绘制</a></td>
+	  </tr>
+	</table>
+	
+	<table cellpadding="5"  cellspacing="4">
+	  <tr>
+	    <th><img src="Pythonphotos/GMT_boundary.png"/></th>
+		<td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247486030&amp;idx=1&amp;sn=702b87269b4e11e1f72442af027bde73&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">中国地图的有关绘制</a></td>
+	  </tr>
+	  <tr>
+	    <th><img src="Pythonphotos/El_Nino97-98.png"/></th>
+		<td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247486142&amp;idx=1&amp;sn=d6d2736445faf1e8eecc146c7b34b907&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">NetCDF(Network Common Data Form)</br>文件处理与可视化</a></td>
+	  </tr>
+	  <tr>
+	    <th><img src="Pythonphotos/dataset-diagram-logo.jpg"/></th>
+		<td><a href="https://mp.weixin.qq.com/s?__biz=MzUxNjEyNTE4MQ==&amp;mid=2247486210&amp;idx=1&amp;sn=0c0c7e0a4eb043ea287d6fe0be920ef9&amp;scene=19&token=842608276&lang=zh_CN#wechat_redirect" target="_blank">新一代NC文件处理库——xarray简介</a></td>
+	  </tr>
+	</table>
+  </div>
+</div>
+
+</div>
+</div>
+
+<footer class="footer-info">
+  Powered by <u>Github & Gitee</u> | Copyrights © 2023, <i style="font-family:'Times New Roman';font-size:18px"}>  
+  <a href="https://mp.weixin.qq.com/s?__biz=MzI3MjA0MzUxOA==&mid=2650373948&idx=1&sn=2e301aba9831f86afc0450edc2f05639&chksm=f33543adc442cabbfa626bf462cd4a5f4f0babd9584b787c397d8cafadd4b15ed14879ae1d9e&mpshare=1&scene=23&srcid=0303nor2H9g5ZK3VCSFiYlZA&sharer_sharetime=1686239094830&sharer_shareid=13fafe4ce801fe1ab143439db6850ec1#rd" target="_blank">Jiang Bin</a></i> 
+  | E-mail: <b>lesnow_bin@163.com</b>
+</footer>
+</body>  
+</html>
